@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A world-class premium Viva preparation website for MySQL and MongoDB">
+    <title>Viva Masterclass | Database Excellence</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Animations -->
+    <div class="bg-base"></div>
+    <div class="blob-c blob-1"></div>
+    <div class="blob-c blob-2"></div>
+    <div class="blob-c blob-3"></div>
+
+    <div class="glass-container">
+        <!-- Header Section -->
+        <header class="glass-panel header-container">
+            <div class="title-wrapper">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="title-content">
+                    <h1 class="gradient-text">Viva Masterclass</h1>
+                    <p class="subtitle">Database Interview & Viva Preparation</p>
+                </div>
+            </div>
+            
+            <!-- Controls -->
+            <div class="controls-wrapper">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search any topic or question..." autocomplete="off">
+                </div>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="mysql">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="tab-icon">
+                        MySQL
+                    </button>
+                    <button class="tab-btn" data-tab="mongodb">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="tab-icon">
+                        MongoDB
+                    </button>
+                    <button class="tab-btn" data-tab="advanced">
+                        <i class="fa-solid fa-bolt tab-icon accent-icon"></i>
+                        Advanced
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <div id="loading" class="loading-state hidden">
+                <div class="spinner"></div>
+                <p>Loading questions...</p>
+            </div>
+            
+            <!-- Questions will be injected here -->
+            <div id="qna-container" class="qna-container"></div>
+            
+            <div id="no-results" class="no-results hidden">
+                <i class="fa-regular fa-face-frown-open"></i>
+                <h3>No questions found</h3>
+                <p>Try adjusting your search terms.</p>
+            </div>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Designed for Excellence <i class="fa-solid fa-rocket"></i> Ready for Top Marks</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
